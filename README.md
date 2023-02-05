@@ -27,6 +27,11 @@ samples, guidance on mobile development, and a full API reference.
 * git branch
 * git stash
 
+To start a new branch and move to it
+* git checkout -b branch-name
+To create a pr
+* git push https://your-repo 
+
 ### Get new changes
 * git checkout -b "branch-name"
 * git pull upstream development
@@ -48,3 +53,7 @@ flutter build apk
 ``` 
 
 * choose AVD device and run 
+
+## Flutter Quick commands
+* hot reload ctrl + \
+* hot restart ctrl + shift + \

@@ -43,11 +43,9 @@ class Profile extends StatelessWidget {
               ),
             ),
           ),
+
           Padding(
-            padding: EdgeInsets.all(20),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.only(left: 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               mainAxisSize: MainAxisSize.min,
@@ -72,8 +70,7 @@ class Profile extends StatelessWidget {
                                           BorderRadius.circular(10),
                                       border: Border.all(
                                         width: 2,
-                                        color: Constants
-                                            .TASK_COMPLETION_CARD_CARD,
+                                        color: Constants.TASK_COMPLETION_CARD_CARD,
                                       ),
                                     ),
                                     child: Row(
