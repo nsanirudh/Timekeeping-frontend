@@ -9,7 +9,7 @@ class TaskListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-
+    final height = MediaQuery.of(context).size.height;
     String date_string() {
       var dateStr = "";
       return dateStr = DateFormat.yMMMMEEEEd().format(DateTime.now());
@@ -20,7 +20,7 @@ class TaskListView extends StatelessWidget {
         child: Padding(
             padding: EdgeInsets.all(10),
             child: Container(
-                constraints: BoxConstraints(maxWidth: width, maxHeight: 180),
+                constraints: BoxConstraints(maxWidth: width, maxHeight: 2/10* height),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(

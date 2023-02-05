@@ -19,7 +19,7 @@ class HeatMapCal extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints(maxHeight: 320, maxWidth: width),
+          constraints: BoxConstraints(maxHeight: 350, maxWidth: width),
           decoration: BoxDecoration(
               color: Constants.CalCardCol,
               borderRadius: BorderRadius.circular(5)),
@@ -30,7 +30,7 @@ class HeatMapCal extends StatelessWidget {
               datasets: {
                 DateTime(2023, 1, 2): 2,
                 DateTime(2023, 1, 8): 3,
-                DateTime(2023, 1, 16): 9,
+                DateTime(2023, 1, 16): 7,
                 DateTime(2023, 1, 23): 3,
                 DateTime(2023, 1, 19): 3,
                 DateTime(2023, 1, 21): 1,
@@ -40,12 +40,13 @@ class HeatMapCal extends StatelessWidget {
                 DateTime(2023, 1, 21): 5,
                 DateTime(2023, 1, 18): 4,
                 DateTime(2023, 1, 7): 7,
-                DateTime(2023, 1, 8): 10,
+                DateTime(2023, 1, 8): 6,
                 DateTime(2023, 1, 9): 1,
                 DateTime(2023, 1, 13): 6,
               },
               colorMode: ColorMode.opacity,
               showColorTip: false,
+              // margin: EdgeInsets.all(0.9),
               // scrollable: true,
               colorsets: {
                 // 1: Colors.red,
@@ -53,8 +54,8 @@ class HeatMapCal extends StatelessWidget {
                 // 5: Colors.yellow,
                 // 7: Colors.green,
                 // 9: Colors.blue,
-                11: Colors.indigo,
-                13: Colors.purple,
+                11: Colors.indigo.shade600,
+                13: Colors.purple.shade50,
               },
               onClick: (value) {
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(value.toString())));
