@@ -99,14 +99,14 @@ class Profile extends StatelessWidget {
                                                 Padding(
                                                   padding:
                                                       const EdgeInsets.all(10),
-                                                  child: Text(
-                                                    "Insights",
+                                                  child: Text("Insights",
                                                     style: TextStyle(
                                                       fontSize: 16,
                                                       color: Colors.white,
                                                     ),
                                                   ),
                                                 ),
+                                                Padding(padding: const EdgeInsets.only(left: 200)),
                                                 IconButton(
                                                   iconSize: 25,
                                                   onPressed: () {},
