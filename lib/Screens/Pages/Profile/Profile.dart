@@ -8,6 +8,12 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+    final options = [
+      "insights",
+      "achievements",
+      "productive vibes",
+      "know more"
+    ];
     return Container(
       constraints: BoxConstraints(maxWidth: width),
       padding: EdgeInsets.all(10),
@@ -43,7 +49,6 @@ class Profile extends StatelessWidget {
               ),
             ),
           ),
-
           Padding(
             padding: EdgeInsets.only(left: 0),
             child: Row(
@@ -66,11 +71,11 @@ class Profile extends StatelessWidget {
                                   child: Container(
                                     width: 350,
                                     decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.circular(10),
+                                      borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
                                         width: 2,
-                                        color: Constants.TASK_COMPLETION_CARD_CARD,
+                                        color:
+                                            Constants.TASK_COMPLETION_CARD_CARD,
                                       ),
                                     ),
                                     child: Row(
@@ -93,20 +98,23 @@ class Profile extends StatelessWidget {
                                                 Padding(
                                                   padding:
                                                       const EdgeInsets.only(
-                                                          top: 15,
-                                                          left: 10),
+                                                          top: 15, left: 10),
                                                 ),
                                                 Padding(
                                                   padding:
                                                       const EdgeInsets.all(10),
-                                                  child: Text("Insights",
+                                                  child: Text(
+                                                    options[0],
                                                     style: TextStyle(
                                                       fontSize: 16,
                                                       color: Colors.white,
                                                     ),
                                                   ),
                                                 ),
-                                                Padding(padding: const EdgeInsets.only(left: 200)),
+                                                Padding(
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 200)),
                                                 IconButton(
                                                   iconSize: 25,
                                                   onPressed: () {},
