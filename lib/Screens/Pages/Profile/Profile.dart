@@ -11,7 +11,7 @@ class Profile extends StatelessWidget {
     final options = [
       "insights",
       "achievements",
-      "productive vibes",
+      "good vibes",
       "know more"
     ];
     return Container(
@@ -104,7 +104,7 @@ class Profile extends StatelessWidget {
                                                   padding:
                                                       const EdgeInsets.all(10),
                                                   child: Text(
-                                                    options[0],
+                                                    options[index],
                                                     style: TextStyle(
                                                       fontSize: 16,
                                                       color: Colors.white,
@@ -115,14 +115,14 @@ class Profile extends StatelessWidget {
                                                     padding:
                                                         const EdgeInsets.only(
                                                             left: 200)),
-                                                IconButton(
-                                                  iconSize: 25,
-                                                  onPressed: () {},
-                                                  icon: Icon(
-                                                    Icons.edit,
-                                                    color: Colors.white,
-                                                  ),
-                                                )
+                                                // IconButton(
+                                                //   iconSize: 25,
+                                                //   onPressed: () {},
+                                                //   icon: Icon(
+                                                //     Icons.edit,
+                                                //     color: Colors.white,
+                                                //   ),
+                                                // )
                                               ],
                                             ),
                                           ],
